@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Light at the End of the Tunnel</title>
+	<!-- Latest compiled and minified CSS -->
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+
+	<!--<script src="hw7.js"</script>-->
+
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+	<style>
+		.panel-body a 
+		{
+		    word-break:break-all;
+		}
+
+	</style>
+</head>
+<body>
+
+
+<div class="container">
+
+
+	<div class="jumbotron" style="background-color: #483D8B; color: white">
+		<h1 class="text-center"><strong>Light at the End of the Tunnel</strong></h1>
+		<h3 class="text-center"><em>Terminal Schedule</em></h3>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+		<br>
+
+<!--stats--><div class="panel panel-primary">
+
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong>
+					<i class="fa fa-table"></i>
+					Train ScheduleCurrent</strong></h3>
+				</div>
+					<table class="table table-hover"
+					id="trainSchedule">
+						<thead>
+							<tr>
+								<th>Train</th>
+								<th>Destination</th>
+								<th>Initial departure Time</th>
+								<th>Frequency</th>
+							</tr>
+					
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>North</td>
+								<td>North</td>
+								<!--need
+								<td>9</td>
+								<td>North</td>-->
+							</tr>
+							<tr>
+								<td>South</td>
+								<td>South</td>
+								<!--need
+								<td>6</td>
+								<td>South</td>other info-->
+							</tr>							<tr>
+								<td>East</td>
+								<td>East</td>
+								<!--need
+								<td>7</td>
+								<td>South</td>other info-->
+							</tr>							<tr>
+								<td>West</td>
+								<td>West</td>
+								<!--need
+								<td>8</td>
+								<td>South</td>other info-->
+							</tr>
+						</tbody>
+	
+					</table>
+				</div>
+			</div>
+			<div class="panel-body-primary">
+				<div class="panel-heading">
+				<h3 class="panel-title"><strong>Type in train & Time</strong></h3>
+			</div>
+			<div class="panel-body">
+
+			<form>
+				<div class="form-group">
+					<label for="">Train Name </label>
+					<input type="text" class="form-control" id="trainNameInput">
+				</div>
+
+				<div class="form-group">
+					<label for="">Destination</label>
+					<input type="text" class="form-control" id="trainDestInput">	
+				</div>
+
+				<div class="form-group">
+					<label for="">First Train Time (HH:mm-military time)</label>
+					<input type="text" class="form-control" id="firstTrainTimeInput">	
+				</div>
+
+				<div class="form-group">
+					<label for="">Frequency</label>
+					<input type="text" class="form-control" id="trainFreqInput">	
+				</div>
+
+				<button type="submit" class="btn btn-primary" id="passengerInfoBtn">Submit</button>
+			</form>
+		</div>
+		</div>
+
+		</div>
+	</div>
+</div>
+
+
+<script src="hw7.js"></script>
+
+
+
+</body>
+</html>
